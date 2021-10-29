@@ -1,7 +1,6 @@
 {
   "name": "fd_db",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node ."
@@ -20,5 +19,6 @@
   "dependencies": {
     "axios": "^0.24.0",
     "pg": "^8.7.1"
-  }
+  },
+  "description": ""
 }

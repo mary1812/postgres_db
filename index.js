@@ -7,7 +7,8 @@ const client = new Client(config);
 async function start() {
   await client.connect();
 
-  await client.query(`CREATE TABLE IF NOT EXISTS "users"(
+  await client.query(`
+  CREATE TABLE IF NOT EXISTS "users"(
     id serial PRIMARY KEY,
     first_name varchar(64) NOT NULL CHECK(first_name != ''),
     last_name varchar(64) NOT NULL CHECK(last_name != ''),
